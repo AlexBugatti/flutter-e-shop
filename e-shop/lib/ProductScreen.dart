@@ -19,7 +19,7 @@ class ProductScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
                     Container(
-                      child: Image.network(product.image.toString()),
+                      child: Image.asset(product.image!),
                       height: 300,
                     ),
                     Text(product.name.toString()),
